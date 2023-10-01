@@ -9,31 +9,40 @@
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet"
         />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Young+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="style.css" />
+
     </head>
 
     <body>
-        <div class="container">
-            <div class="app">
-                <h1>
-                    To-Do List
-                    <img src="img/1x/outline_grading_black_24dp.png" alt="" />
-                </h1>
-                <div class="row">
+        <header>
+            <h1>To-Do List</h1>
+            <i class="fa-solid fa-list-check list"></i>
+        </header>
+
+        <main>
+            <section>
+                
+                <form class="row">
                     <input
                         type="text"
                         id="input-box"
-                        placeholder="Add your text"
+                        placeholder="Enter To-Do"
                     />
-                    <button onclick="addTask()">Add</button>
-                </div>
+                 <button onclick="addTask()">Add</button>   
+                </form>
+            </section>
+            
+            <section>  
                 <ul id="list-container">
-                    <!-- <li class="checked">Task 1</li>                   
-                    <li>Task 2</li>
-                    <li>Task 3</li> -->
+                    
                 </ul>
-            </div>
-        </div>
+            </section>
+        </main>
 
         <script src="script.js"></script>
     </body>
